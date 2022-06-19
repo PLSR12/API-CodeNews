@@ -11,7 +11,7 @@ class News extends Model {
         url: {
           type: Sequelize.VIRTUAL,
           get() {
-            return `http://localhost:3001/notices-file/${this.path}`
+            return `https://code-news-fjsf6unu8-plsr12.vercel.app/notices-file/${this.path}`
           },
         },
       },

@@ -16,12 +16,12 @@ class App {
   middlewares () {
     this.app.use(express.json())
     this.app.use(
-      'https://code-news-fjsf6unu8-plsr12.vercel.app/notices-file',
+      '/notices-file',
       express.static(resolve(__dirname, '..', 'uploads'))
     )
 
     this.app.use(
-      'https://code-news-fjsf6unu8-plsr12.vercel.app/category-file',
+      '/category-file',
       express.static(resolve(__dirname, '..', 'uploads'))
     )
   }
